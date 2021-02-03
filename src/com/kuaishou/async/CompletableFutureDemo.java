@@ -44,6 +44,7 @@ public class CompletableFutureDemo {
             System.out.println(e.getMessage() + "2");
             return null;
         });
+        System.out.println("====================");
 
 
         CompletableFuture.allOf(future1_done,future1_done1).thenRun(() -> System.out.println("ALL TASK DONE")).join();
