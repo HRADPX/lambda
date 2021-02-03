@@ -38,8 +38,6 @@ public class CompletableFutureTask {
             futures.add(future);
 
 
-
-
         });
         System.out.println("async task all have submit, wait to end....");
         CompletableFuture.allOf(futures.toArray(new CompletableFuture[0])).join();
